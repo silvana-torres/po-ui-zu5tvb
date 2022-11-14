@@ -1,0 +1,17 @@
+<po-page-default p-title="PO UI">
+  <form [formGroup]="form">
+    <po-decimal
+      p-label="peso 1"
+      [p-decimals-length]="2"
+      formControlName="peso1"
+    >
+    </po-decimal>
+    <po-decimal
+      #campoPeso2
+      p-label="peso 2"
+      (p-change)="validaPesoLiq()"
+      [p-decimals-length]="2"
+      formControlName="peso2">
+    </po-decimal>
+  </form>
+</po-page-default>
